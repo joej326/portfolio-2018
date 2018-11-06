@@ -1,0 +1,58 @@
+.header-main {
+    background-color: black;
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    color: white;
+    // position: fixed;
+    width: 100%;
+    // z-index: 100;
+
+    & div {
+        margin: 0.5rem 1rem;
+    }
+}
+
+.links-div {
+    float: right;
+    font-size: 1.5rem;
+    margin: 2px 2px;
+
+    & * {
+        float: left;
+    }
+
+    & ol {
+        list-style: none;
+
+        & li {
+            margin: 0.3rem 0.3rem;
+            padding: 0.5rem 0.5rem;
+            border-radius: 0.5rem;
+            background-color: darken(rgba(50, 228, 235, 0.637), 50);
+            cursor: pointer;
+
+            &:hover {
+            background-color: darken(rgba(50, 228, 235, 0.637), 30);            
+            }
+
+            & a {
+                color: white;
+                text-decoration: none;
+                border-radius: 0.2rem;
+                transition: all 0.05s;
+
+                &:active {
+                    background-color: rgba(rgb(236, 184, 13), 0.5);
+                    transform: translateY(10%);
+                }
+            }
+        }
+    }
+}
+
+button {
+    font-size: 0.2rem;
+}

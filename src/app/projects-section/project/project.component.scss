@@ -1,0 +1,59 @@
+
+
+.project-main {
+    background-color: rgba(white, 0.5);
+    transition: all 0.5s;
+    padding: 2rem 6rem;
+    border: solid black 0.3rem;
+    border-radius: 1rem;
+
+    & .image-container {
+        overflow: hidden;
+        border-radius: 1rem;
+        margin-bottom: 2rem;    
+    
+        & .project-img {
+            padding: 10rem 10rem;
+            background-size: contain;
+            transition: all 0.5s;
+    
+            // &:hover {
+            //     transform: scale(1.2, 1.2);
+            // }
+        }
+    }
+
+    & h1 {
+        text-align: center;
+        transition: all 0.25s;
+    }
+
+    &:hover {
+        transform: translateY(-3rem);
+        box-shadow: 3rem 3rem 1rem rgba(black, 0.5);
+    }
+
+    &:hover .project-img {
+        transform: scale(1.2, 1.2);
+    }
+
+    &:hover h1 {
+        text-decoration: underline;
+        color: rgb(14, 117, 5);
+    }
+}
+
+img {
+    width: 10rem;
+    display: block;
+    margin: 0 auto;
+}
+
+// .test {
+//     padding: 4rem;
+//     background-color: red;
+// }
+
+
+
+
